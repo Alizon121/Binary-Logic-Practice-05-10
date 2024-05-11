@@ -1,6 +1,7 @@
 // Convert the integers in the console.logs below to base 10:
 
 /******************************************************************************/
+// parseInt() returns a base-10 num
 
 const convertToBase10 = str => {
 if ((str.includes('0b'))) {
