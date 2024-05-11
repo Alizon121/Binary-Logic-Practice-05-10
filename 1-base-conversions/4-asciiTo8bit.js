@@ -14,8 +14,8 @@ const addZeros = require('../utils/addZeros');
 const asciiTo8bit = str => {
 let result = '';
 for (let i = 0; i < str.length; i++) {
-  let decimal = str.charCodeAt(i);
-  let binary = decimal.toString(2)
+  let decimal = str.charCodeAt(i); // -> ASCII to base-10
+  let binary = decimal.toString(2) // -> base-10 to binary 6-bit
   let zero = addZeros(binary, 8)
   result += zero
 }
